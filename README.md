@@ -4,7 +4,7 @@
 ### npx wdio run wdio.conf.js
 
 
-# otvoriš terminal i ideš naredbu po naredbu, ako ti zadnja naredba bude izvršena ona znači da je sve ok
-# pitat će te kroz instalaciju da nešto potvrdiš, samo enter u tom slučaju
-# kad pokreneš ovu npx wdio run wdio.conf.js trebalo bi pokrenuti neki test koji dođe kad instalriš ovo prehodno
-# kad ti dođe ovako nešto (Y/N) staviš samo Y i enter to znači kao Yes
+## otvoriš terminal i ideš naredbu po naredbu, ako ti zadnja naredba bude izvršena onda znači da je sve ok
+## pitat će te kroz instalaciju da nešto potvrdiš, samo enter u tom slučaju
+## kad pokreneš ovu npx wdio run wdio.conf.js trebalo bi pokrenuti neki test koji dođe kad instaliraš ovo prehodno
+## kad ti dođe ovako nešto (Y/N) staviš samo Y i enter to znači kao Yes
