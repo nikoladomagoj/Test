@@ -29,7 +29,6 @@ Example:
 
 ---
 
-teee
 ## ⚙️ Installation
 
 ### Prerequisites
