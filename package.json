@@ -1,0 +1,19 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "kk ## otvoriš terminal i ideš naredbu po naredbu, ako ti zadnja naredba bude izvršena onda znači da je sve ok ## pitat će te kroz instalaciju da nešto potvrdiš, samo enter u tom slučaju ## kad pokreneš ovu npx wdio run wdio.conf.js trebalo bi pokrenuti neki test koji dođe kad instaliraš ovo prehodno ## kad ti dođe ovako nešto (Y/N) staviš samo Y i enter to znači kao Yes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "wdio": "wdio run ./wdio.conf.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@wdio/cli": "^9.20.0",
+    "@wdio/local-runner": "^9.20.0",
+    "@wdio/mocha-framework": "^9.20.0",
+    "@wdio/spec-reporter": "^9.20.0"
+  }
+}
