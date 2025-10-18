@@ -50,7 +50,8 @@ exports.config = {
     // https://saucelabs.com/platform/platform-configurator
     //
     capabilities: [{
-        browserName: 'chrome'
+        browserName: 'chrome',
+        'wdio:enforceWebDriverClassic': true
     }],
 
     //
