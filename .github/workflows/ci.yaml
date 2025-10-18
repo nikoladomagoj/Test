@@ -17,4 +17,3 @@ jobs:
 
       - name: 🧪 Test
         run: npm run wdio
-
