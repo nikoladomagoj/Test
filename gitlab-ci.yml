@@ -1,0 +1,25 @@
+stages:
+  - test
+
+webdriverio-tests:
+  stage: test
+  image: node:20  # or node:18 if your project uses that version
+  services:
+    - name: selenium/standalone-chrome:latest
+      alias: selenium
+  variables:
+    # WebDriver endpoint for Selenium container
+    SELENIUM_REMOTE_URL: "http://selenium:4444/wd/hub"
+    # Disable sandbox for Chrome in CI
+    CHROME_FLAGS: "--no-sandbox --disable-dev-shm-usage"
+  before_script:
+    - npm ci
+  script:
+    - echo "Running WebdriverIO tests..."
+    - npm run test:wdio
+  artifacts:
+    when: always
+    paths:
+      - reports/
+      - allure-results/
+    expire_in: 1 week
