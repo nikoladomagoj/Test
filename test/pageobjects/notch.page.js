@@ -21,8 +21,8 @@ class teste2e {
         return $('button[id="gform_submit_button_7"]');
     }
     get emailError() {
-    return $('div[id="validation_message_7_15"]');
+    return $('div[id="validation_message_7_17"]');
     }
-    }
+}
 
 module.exports = new teste2e();

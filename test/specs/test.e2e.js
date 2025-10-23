@@ -16,6 +16,7 @@ describe('Notch qa task', () => {
         phoneNumber = '0973205627';
         await browser.url(loginURL);
 
+
         const cookieAccept = await $('button.cky-btn-accept');
         if (await cookieAccept.isDisplayed()) {
         await cookieAccept.click();
@@ -31,6 +32,6 @@ describe('Notch qa task', () => {
         await notchPage.phoneNumber.setValue(phoneNumber);
         await notchPage.privacyPolicy.click();
         await notchPage.sendMessage.click();
-        await expect (notchPage.emailError).toBeDisplayed();
+        await expect(notchPage.emailError).toBeDisplayedInViewport();
     })
 })
