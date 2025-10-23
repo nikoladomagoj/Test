@@ -16,20 +16,28 @@ describe('Notch qa task', () => {
         phoneNumber = '0973205627';
         await browser.url(loginURL);
 
-
         const cookieAccept = await $('button.cky-btn-accept');
         if (await cookieAccept.isDisplayed()) {
         await cookieAccept.click();
     }
     });
     
+    it('Popunjavanje polja bez email-a', async () => {
+        //await notchPage.cookie.click();
+        await notchPage.firstName.setValue(firstName);
+        await notchPage.lastName.setValue(lastName);
+        //await notchPage.email.setValue(email);
+        await notchPage.phoneNumber.setValue(phoneNumber);
+        await notchPage.privacyPolicy.click();
+        await notchPage.sendMessage.click();
+        await expect(notchPage.emailError).toBeDisplayedInViewport();
+    })
+
     it('Popunjavanje polja sa vrijednostima iznad', async () => {
-        
-        
         await notchPage.firstName.setValue(firstName);
         await notchPage.lastName.setValue(lastName);
         await notchPage.email.setValue(email);
         await notchPage.phoneNumber.setValue(phoneNumber);
 
-    })
-})
+    });
+});
