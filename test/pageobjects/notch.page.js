@@ -1,6 +1,6 @@
 class teste2e {
     get cookie() {
-        return $('button[id="cky-btn-accept"]');
+        return $('button[class="cky-btn cky-btn-accept"]');
     }
     get firstName() {
         return $('input[id="input_7_5"]');
@@ -13,6 +13,15 @@ class teste2e {
     }
     get phoneNumber() {
         return $('input[id="input_7_8"]');
+    }
+    get hdyhau() {
+        return $('select[id="input_7_9"]');
+    }
+    get company() {
+        return $('input[id="input_7_11"]');
+    }
+    get budget() {
+        return $('select[id="input_7_12"]');
     }
     get privacyPolicy() {
         return $('input[id="input_7_16_1"]');
