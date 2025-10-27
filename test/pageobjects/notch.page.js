@@ -39,6 +39,12 @@ class teste2e {
         return $('button[data-text="Send message"]');
     }
 
+    get upload() {
+        return $('button[id="gform_browse_button_7_3"]');
+    }
+
+
+
     // ovo je funkcija, async znači asynkrono, to jest stalno se poziva dok se ne zovne
     // imaš async funckije i sync funkcije, kod testiranja se stalno koriste async
     // <li class="active-result" data-option-array-index="2">Google</li> ovo je element od google da kliknemo
