@@ -23,6 +23,12 @@ class teste2e {
     get budget() {
         return $('div[id="field_7_12"]');
     }
+    get teamextension() {
+        return $('label[id="label_7_14_3"]');
+    }
+    get projectDetails() {
+    return $('textarea[id="input_7_15"]');
+    }
     get privacyPolicy() {
         return $('input[id="input_7_16_1"]');
     }
@@ -38,6 +44,12 @@ class teste2e {
     get sendMessage() {
         return $('button[data-text="Send message"]');
     }
+
+    get upload() {
+        return $('button[id="gform_browse_button_7_3"]');
+    }
+
+
 
     // ovo je funkcija, async znači asynkrono, to jest stalno se poziva dok se ne zovne
     // imaš async funckije i sync funkcije, kod testiranja se stalno koriste async
