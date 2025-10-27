@@ -29,10 +29,9 @@ scripta wdio će pokrenuti testove
 scripta allure:generate će zapravo napraviti allure-results folder
 scripta allure:open će otvoriti localno report
 
-
-![Screenshot 2025-10-28 at 00.37.31.png](../Screenshot%202025-10-28%20at%2000.37.31.png)
+![Screenshot 2025-10-28 at 00.37.31.png](Screenshot%202025-10-28%20at%2000.37.31.png)
 
 nakon toga dodati u gitignore allure-reports i allure-results koji će se pojaviti kada pokrenemo testove
 jer ne želimo na git-u te reporte (te foldere uvijek možemo oizbrisati ručno, klik na njih i delete ako nam smetaju)
 
-ako dobiješ nešto ovako uspiješno si sve riješio
+ako dobiješ nešto ovako kao na slici uspiješno si sve riješio
