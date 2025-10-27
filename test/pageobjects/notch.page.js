@@ -23,6 +23,12 @@ class teste2e {
     get budget() {
         return $('div[id="field_7_12"]');
     }
+    get teamextension() {
+        return $('label[id="label_7_14_3"]');
+    }
+    get projectDetails() {
+    return $('textarea[id="input_7_15"]');
+    }
     get privacyPolicy() {
         return $('input[id="input_7_16_1"]');
     }
