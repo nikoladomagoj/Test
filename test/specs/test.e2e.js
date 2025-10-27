@@ -18,7 +18,7 @@ describe('Notch qa task', () => {
         phoneNumber = '0973205627';
         company = "Apple"
         await browser.url(loginURL);
-
+        //cookie
         const cookieAccept = await $('button.cky-btn-accept');
         if (await cookieAccept.isDisplayed()) {
             await cookieAccept.click();
