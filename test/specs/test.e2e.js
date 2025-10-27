@@ -20,8 +20,8 @@ describe('Notch qa task', () => {
 
         const cookieAccept = await $('button.cky-btn-accept');
         if (await cookieAccept.isDisplayed()) {
-        await cookieAccept.click();
-
+            await cookieAccept.click();
+        }
     });
 
     it('Popunjavanje polja bez email-a', async () => {
@@ -32,7 +32,7 @@ describe('Notch qa task', () => {
         await notchPage.privacyPolicy.click();
         await notchPage.sendMessage.click();
         await expect(notchPage.emailError).toBeDisplayedInViewport();
-    })
+    });
 
     it('Popunjavanje polja sa vrijednostima iznad', async () => {
         await notchPage.firstName.setValue(firstName);
@@ -58,6 +58,4 @@ describe('Notch qa task', () => {
         });
  //elemente nisi dobro našao, krivo si gledao to te je zbunilo
      });
-
  // kad sve dobro proučiš možeš izbrisati sve ove komentare ovdje i u pageobjects
-});
