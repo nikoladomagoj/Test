@@ -47,15 +47,14 @@ describe('Notch qa task', () => {
         await notchPage.lastName.setValue(lastName);
         await notchPage.email.setValue(email);
         await notchPage.phoneNumber.setValue(phoneNumber);
-        await notchPage.hdyhau.click(); //klikni na How did you hear about us da dobijemo padajući izbornik
-        await notchPage.selectHowDidYouHear("Google"); // nađi mi lement koji sandrži u sebi riječ Google
-        await notchPage.company.click(); //klikni na company
-        await browser.keys("Test"); //pošalji neka slova u ovom slučaju popunit će se kao riječ Test
-        await notchPage.budget.click(); //klikni na budget
-        await notchPage.selectBudgetOption("Up to €50.000"); // nađi element koji u sebi sadrži ovo (pogledaj pageobjects kak osam definirao)
-        await notchPage.checkbox.click(); //klikni na checkbox
-        await notchPage.sendMessage.click(); //klikni na sendmessage
+        await notchPage.hdyhau.click();
+        await notchPage.selectHowDidYouHear("Google");
+        await notchPage.company.click();
+        await browser.keys("Test");
+        await notchPage.budget.click();
+        await notchPage.selectBudgetOption("Up to €50.000");
+        await notchPage.checkbox.click();
+        await notchPage.sendMessage.click();
         });
- //elemente nisi dobro našao, krivo si gledao to te je zbunilo
      });
- // kad sve dobro proučiš možeš izbrisati sve ove komentare ovdje i u pageobjects
+
