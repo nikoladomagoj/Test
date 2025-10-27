@@ -1,5 +1,4 @@
 const { $ } = require('@wdio/globals')
-const Page = require('./page');
 
 /**
  * sub page containing specific selectors and methods for a specific page
@@ -14,3 +13,7 @@ class SecurePage extends Page {
 }
 
 module.exports = new SecurePage();
+
+
+//ovo nam ne treba možemo cijeli file izbrisati
+//ovaj login.page.js nek stoji
