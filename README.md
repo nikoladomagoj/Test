@@ -1,65 +1,78 @@
-# 🚀 Testing
+# 🚀 QA Automation Testing –  Task
 
-A brief description of what your project does and why it’s useful or interesting.
+This project contains **automated end-to-end (E2E) tests** built with **WebdriverIO**  
+to test the form functionality on [Notch QA Task](https://wearenotch.com/qa_task/).
+
+It serves as an example of a **QA automation project** that tests form inputs, dropdown selections,  
+file uploads, and validation messages.
 
 ---
 
 ## 📖 Table of Contents
 
+- 🧠 About  
+- ⚙️ Technologies  
+- 📁 Project Structure  
+- 💡 Installation & Setup  
+- 🧪 Test Scenarios  
+- 🛠️ Troubleshooting 
 
 ---
 
 ## 🧠 About
 
-Explain the purpose of your project.  
-Why does it exist? What problem does it solve?
+This repository demonstrates **automated QA testing** using the **WebdriverIO** framework.  
+The tests verify key functionalities of a web form, including:
 
-Example:
-> This project is a lightweight REST API that provides weather data using OpenWeatherMap.  
-> Built with **Node.js**, **Express**, and **TypeScript**.
+- Filling out text input fields (first name, last name, email, phonenumber)
+- Displaying validation messages (e.g., *“This field is required”*)
+- Selecting checkboxes and dropdown options
+- Uploading files and submitting the form
 
 ---
 
 ## ✨ Features
 
-- 🔹 Feature 1 – short explanation
-- 🔹 Feature 2 – short explanation
-- 🔹 Feature 3 – short explanation
-- 🔹 Optional: Roadmap or planned features
-
+- 🔹 WebdriverIO E2E tests  
+- 🔹 Page Object Model structure  
+- 🔹 Automated testing of inputs, dropdowns, and checkboxes
+- 🔹 Test execution in Chrome browser  
 ---
 
 ## ⚙️ Installation
 
 ### Prerequisites
-Make sure you have the following installed:
-- [Node.js](https://nodejs.org/) vXX+
-- npm or yarn
+Before running the tests, make sure you have the following installed on your system:
+- Node.js v18+
+- npm (comes with Node.js) or yarn
+- Google Chrome browser
 
 ### Steps
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/your-repo-name.git
+git clone https://github.com/nikoladomagoj/wdio-automation-tests.git
 
 # Navigate to the project folder
-cd your-repo-name
+cd wdio-automation-tests
+
+# Initialize npm (if not already done)
+npm init -y
 
 # Install dependencies
 npm install
 
-# Run the app
-npm start
+# Install WebdriverIO CLI as a development dependency
+npm install --save-dev @wdio/cli
 
+#Run the WebdriverIO configuration wizard (only needed once)
+npx wdio config
 
-### npm init -y
-### npm install --save-dev @wdio/cli
-### npx wdio config
-### npx wdio run wdio.conf.js
+# Run the E2E test suite
+npx wdio run wdio.conf.js
 
-
+# In your wdio.conf.js, make sure the capabilities section includes Chrome and enforces the classic WebDriver mode
 capabilities: [{
 browserName: 'chrome',
 'wdio:enforceWebDriverClassic': true
 }],
 
-ako bude problema kad se pokrene test ovo staviti u wdio.conf.js
