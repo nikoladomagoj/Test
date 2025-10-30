@@ -44,10 +44,6 @@ class teste2e {
         return $('input[id="input_7_16_1"]');
     }
 
-    // get sendMessage() {
-    //     return $('button[id="gform_submit_button_7"]'); //imamo dva sendMessage pa izbrisati koji je višak
-    // }
-
     get emailError() {
         return $('div[id="validation_message_7_17"]');
     }
