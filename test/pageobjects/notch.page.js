@@ -1,7 +1,7 @@
 class teste2e {
 
     get cookie() {
-        return $('button[class="cky-btn cky-btn-accept"]'); //ovaj element više nigdje ne koristiš pa ga možemo izbrisati ili ga iskoristi u testu
+        return $('button[class="cky-btn cky-btn-accept"]');
     }
 
     get firstName() {
@@ -44,9 +44,9 @@ class teste2e {
         return $('input[id="input_7_16_1"]');
     }
 
-    get sendMessage() {
-        return $('button[id="gform_submit_button_7"]'); //imamo dva sendMessage pa izbrisati koji je višak
-    }
+    // get sendMessage() {
+    //     return $('button[id="gform_submit_button_7"]'); //imamo dva sendMessage pa izbrisati koji je višak
+    // }
 
     get emailError() {
         return $('div[id="validation_message_7_17"]');
@@ -63,12 +63,6 @@ class teste2e {
     get upload() {
         return $('button[id="gform_browse_button_7_3"]');
     }
-
-    // ovo je funkcija, async znači asynkrono, to jest stalno se poziva dok se ne zovne
-    // imaš async funckije i sync funkcije, kod testiranja se stalno koriste async
-    // <li class="active-result" data-option-array-index="2">Google</li> ovo je element od google da kliknemo
-    // mi smo ispod dolje napraviti da mi funckiju koja uđe u ove elemente i traži tekst, teks smo koristili u testu
-    //istu stvar smo napravili za budget
 
     async selectHowDidYouHear(option) {
         const optionToSelect = $(`//li[contains(@class,'active-result') and text()='${option}']`);

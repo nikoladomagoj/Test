@@ -12,7 +12,7 @@ describe('Notch qa task', () => {
     let company;
     let projectdetails;
 
-    before('Daj vrijednost ovim iznad varijablama', async () => {
+    beforeEach('Daj vrijednost ovim iznad varijablama', async () => {
         firstName = 'pero';
         lastName = 'peric';
         email = 'pero.peric@gmail.com';
@@ -27,7 +27,7 @@ describe('Notch qa task', () => {
         }
     });
 
-    it('Popunjavanje forme bez email-a', async () => {
+    it('Popunjavanje forme bez email-a i provjera validacije', async () => {
         await notchPage.firstName.setValue(firstName);
         await notchPage.lastName.setValue(lastName);
         //await notchPage.email.setValue(email);
@@ -59,7 +59,7 @@ describe('Notch qa task', () => {
         await notchPage.sendMessage.click();
         });
 
-    it("Upload file-a", async () => {
+    it("Upload file-a na formi", async () => {
         await browser.execute(() => {
             const inputEl = document.querySelector('[id="field_7_3"]');
             inputEl.removeAttribute('class');
@@ -70,7 +70,7 @@ describe('Notch qa task', () => {
         await fileInput.setValue(filePath);
     });
 
-    it("Popunjavanje forme sa svim vrijednostima", async () => {
+    it("Popunjavanje forme sa svim mogućim vrijednostima", async () => {
         await notchPage.firstName.setValue(firstName);
         await notchPage.lastName.setValue(lastName);
         await notchPage.email.setValue(email);
