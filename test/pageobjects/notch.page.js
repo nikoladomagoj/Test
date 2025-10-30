@@ -1,9 +1,5 @@
 class teste2e {
 
-    get cookie() {
-        return $('button[class="cky-btn cky-btn-accept"]');
-    }
-
     get firstName() {
         return $('input[id="input_7_5"]');
     }
